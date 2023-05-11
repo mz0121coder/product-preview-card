@@ -1,0 +1,104 @@
+/* reusable colours and body */
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream-color: hsl(30, 38%, 92%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white-color: hsl(0, 0%, 100%);
+  --details-font: 'Montserrat', sans-serif;
+  --overview-font: 'Fraunces', serif;
+}
+
+body {
+  background-color: var(--cream-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* product card styles */
+
+/* card headings and text */
+.product-card {
+  margin-top: 150px;
+  display: flex;
+}
+
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  width: 300px;
+  padding: 15px;
+  justify-content: space-evenly;
+  border-radius: 0 20px 20px 0;
+}
+
+.img {
+  border-radius: 20px 0 20px 0;
+}
+
+h1 {
+  font-size: 12px;
+  letter-spacing: 1.4px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: var(--overview-font)
+}
+
+p {
+  margin: 10px;
+  font-size: 12px;
+  font-family: var(--details-font);
+}
+
+
+/* card prices */
+.prices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.discount-price {
+  font-family: var(--overview-font);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.main-price {
+  font-size: 12px;
+}
+
+.add-to-cart {
+  display: flex;
+}
+
+.add-to-cart button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--dark-cyan);
+  color: var(--white-color);
+  margin: 10px auto;
+}
+
+.add-to-cart button:hover {
+  background-color: darkgreen;
+}
+
+/* footer styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
